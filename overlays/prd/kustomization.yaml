@@ -3,7 +3,7 @@ kind: Kustomization
 
 helmCharts:
   - name: nginx-app
-    chartDir: ../../nginx-app
+    chartHome: ../../nginx-app
     valuesFile: values-prd.yaml
     releaseName: nginx-prd
     namespace: app-prd
