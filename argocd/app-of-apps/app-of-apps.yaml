@@ -8,7 +8,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/argoproj/argocd-example-apps.git
+    repoURL: https://github.com/khimnguynnn/Helm-X-Kustomize-X-ArgoCD.git
     targetRevision: main
     path: argocd/applications
   destination:
