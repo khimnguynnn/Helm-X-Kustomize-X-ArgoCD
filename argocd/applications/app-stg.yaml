@@ -1,17 +1,17 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: nginx-develop
+  name: nginx-stg
   namespace: argocd
 spec:
   project: default
   source:
     repoURL: https://github.com/khimnguynnn/Helm-X-Kustomize-X-ArgoCD.git
     targetRevision: main
-    path: overlays/develop
+    path: overlays/stg
   destination:
     server: https://kubernetes.default.svc
-    namespace: app-dev
+    namespace: app-stg
   syncPolicy:
     automated:
       prune: true
