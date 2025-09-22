@@ -1,0 +1,15 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+helmCharts:
+  - name: nginx-app
+    path: ../../nginx-app
+    valuesFile: values-stg.yaml
+    releaseName: nginx-stg
+    namespace: app-stg
+
+namespace: app-stg
+
+labels:
+  - pairs:
+    env: stg

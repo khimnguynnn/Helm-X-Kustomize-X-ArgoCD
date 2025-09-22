@@ -1,0 +1,15 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+helmCharts:
+  - name: nginx-app
+    path: ../../nginx-app
+    valuesFile: values-prd.yaml
+    releaseName: nginx-prd
+    namespace: app-prd
+
+namespace: app-prd
+
+labels:
+  - pairs:
+    env: prd
