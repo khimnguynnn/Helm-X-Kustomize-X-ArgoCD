@@ -3,7 +3,7 @@ kind: Kustomization
 
 helmCharts:
   - name: nginx-app
-    path: ../../nginx-app
+    chartDir: ../../nginx-app
     valuesFile: values-dev.yaml
     releaseName: nginx-dev
     namespace: app-dev
