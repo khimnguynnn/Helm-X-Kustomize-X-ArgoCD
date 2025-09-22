@@ -14,4 +14,4 @@ namespace: app-stg
 
 labels:
   - pairs:
-    env: stg
+      env: stg

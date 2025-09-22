@@ -14,4 +14,4 @@ namespace: app-prd
 
 labels:
   - pairs:
-    env: prd
+      env: prd
